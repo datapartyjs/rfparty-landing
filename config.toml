@@ -1,0 +1,29 @@
+baseURL = "https://dataparty.xyz"
+languageCode = "en-us"
+title = "DataParty"
+
+
+theme = "hugo-story"
+publishDir = "docs"
+
+
+## -----------------------------------------------
+## Hugo Built-in Features
+## -----------------------------------------------
+
+disableKinds = ["taxonomy", "taxonomyTerm", "section"]
+# googleAnalytics = "your-google-analytics-id"
+
+
+## -----------------------------------------------
+## Site Parameters
+## -----------------------------------------------
+
+[Params]
+  description = "Dataparty"
+  logo = "images/banner.png"
+  favicon = true
+
+[Params.social]
+  github = "https://github.com/datapartyjs/"
+  twitter = "https://twitter.com/datapartyjs"
