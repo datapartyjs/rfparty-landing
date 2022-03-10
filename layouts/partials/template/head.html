@@ -1,0 +1,42 @@
+<head>
+	<title>{{ .Site.Title }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	{{ if .Site.Params.favicon }}
+	{{ partial "template/favicon" }}
+	{{ end }}
+	<!-- CSS -->
+	{{ if .Site.IsServer }}
+	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "assets/css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
+	<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+	{{ else }}
+	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "assets/css/main.css" "enableSourceMap" false) }}
+	<link rel="stylesheet" href="{{ ($style | minify).RelPermalink }}">
+	{{ end }}
+	{{ if .Site.IsServer }}
+	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "assets/css/noscript.css" "enableSourceMap" false) }}
+	<noscript><link rel="stylesheet" href="{{ ($noscript).RelPermalink }}" /></noscript>
+	{{ else }}
+	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "assets/css/noscript.css" "enableSourceMap" false) }}
+	<noscript><link rel="stylesheet" href="{{ ($noscript | minify).RelPermalink }}" /></noscript>
+	{{end}}
+
+
+	<!--  Essential META Tags -->
+<meta property="og:title" content="{{ .Site.Title }}">
+<meta property="og:type" content="website" />
+<meta property="og:image" content="images/dataparty-thumb.png">
+<meta property="og:url" content="https://www.dataparty.xyz">
+<meta name="twitter:card" content="summary_large_image">
+
+<!--  Non-Essential, But Recommended -->
+<meta property="og:description" content="Sense, stream, party">
+<meta property="og:site_name" content="dataparty.xyz">
+<meta name="twitter:image:alt" content="dataparty.xyz - sense, stream, party">
+
+<!--  Non-Essential, But Required for Analytics -->
+<!-- <meta property="fb:app_id" content="your_app_id" /> -->
+<meta name="twitter:site" content="@datapartydao">
+</head>
