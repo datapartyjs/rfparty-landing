@@ -1,6 +1,6 @@
 baseURL = "https://dataparty.xyz"
 languageCode = "en-us"
-title = "DataParty"
+title = "DataParty - sense, stream, party"
 
 
 theme = "hugo-story"
@@ -21,9 +21,9 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 [Params]
   description = "Dataparty"
-  logo = "images/banner.png"
+  logo = "images/favicon.ico"
   favicon = true
 
 [Params.social]
-  github = "https://github.com/datapartyjs/"
+  ## github = "https://github.com/datapartyjs/"
   twitter = "https://twitter.com/datapartyjs"

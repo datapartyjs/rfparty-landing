@@ -1,0 +1,16 @@
+<!-- Spotlight -->
+<section class="spotlight_video {{ .style }}"{{ with .id }} id="{{ . }}"{{ end }}>
+  <div class="content">
+      {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+      {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
+      {{ with .button }}<ul class="actions stacked">
+          <li><a href="{{ .link }}" class="button">{{ .label }}</a></li>
+      </ul>{{ end }}
+  </div>
+  {{ with .video }}<div class="image">
+      <video class="image" autoplay loop muted inline>
+        <source src="{{ . }}" type="video/mp4" />
+      </video>
+
+  </div>{{ end }}
+</section>
