@@ -25,5 +25,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
   favicon = true
 
 [Params.social]
-  ## github = "https://github.com/datapartyjs/"
+  github = "https://github.com/datapartyjs/"
   twitter = "https://twitter.com/datapartydao"
+  facebook = "https://www.facebook.com/datapartydao"
+  instagram = "https://www.instagram.com/datapartydao"
