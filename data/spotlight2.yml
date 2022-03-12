@@ -3,7 +3,7 @@ style: "style5 invert orient-left content-align-left image-position-center onscr
 id: "teleop"
 title : "teleop.xyz"
 content: |
-  Manage one or many ROS devices remotely. Rapidly troubleshoot issues and immediatly share solutions.
+  Manage one or many ROS devices remotely. Rapidly troubleshoot issues and immediately share solutions.
   <br/>
   <br/>
   Keywords: ROS | Robotics | IoT 
