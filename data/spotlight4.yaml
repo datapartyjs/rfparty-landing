@@ -1,0 +1,13 @@
+####################### Spotlight #########################
+style: "style1 invert orient-left content-align-left image-position-center onscroll-image-fade-in"
+id: "ninjasintokyo"
+title : "ninjas in tokyo"
+content: |
+  explore tokyo, from a ninja street view
+  <br/>
+  <br/>
+  Keywords: Games | Metaverse | Arcade 
+button: 
+  label: "Coming Soon"
+  link: "#ninjasintokyo"
+video: "images/nit-med-720p.mp4"
