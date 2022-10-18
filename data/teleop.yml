@@ -1,5 +1,5 @@
 ####################### Spotlight #########################
-style: "style5 invert orient-left content-align-left image-position-center onscroll-image-fade-in"
+style: "style5 invert orient-right content-align-left image-position-center onscroll-image-fade-in"
 id: "teleop"
 title : "teleop.xyz"
 content: |
