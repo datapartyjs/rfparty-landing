@@ -1,0 +1,13 @@
+####################### Spotlight #########################
+style: "style1 invert orient-left content-align-left image-position-center  onscroll-image-fade-in"
+id: "partyon"
+title : "partyon.xyz"
+content: |
+  Federated social media
+  <br/>
+  <br/>
+  Keywords: Social Media | ActivityPub | Mastodon 
+button: 
+  label: "Party On"
+  link: "https://partyon.xyz/about"
+video: "images/partyon-noise.mp4"
