@@ -26,7 +26,8 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 [Params.social]
   github = "https://github.com/datapartyjs/"
-  twitter = "https://twitter.com/datapartydao"
+  mastodon = "https://partyon.xyz/@dataparty"
+  #twitter = "https://twitter.com/datapartydao"
   facebook = "https://www.facebook.com/datapartydao"
   instagram = "https://www.instagram.com/datapartydao"
   youtube = "https://www.youtube.com/channel/UCi7MdWSJ6laGn0p11IuOuTA"
