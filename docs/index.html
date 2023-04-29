@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 
 <html>
-	
-	<head>
-	<meta name="generator" content="Hugo 0.74.3" />
-	<title>DataParty</title>
+
+<head>
+	<meta name="generator" content="Hugo 0.93.3" />
+	<title>DataParty - sense, stream, party</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="">
+	<meta name="description" content="DataParty - sense, stream, party">
 	<meta name="author" content="">
 	
 	<meta name="msapplication-TileColor" content="#da532c">
@@ -27,40 +27,292 @@
 	
 	<noscript><link rel="stylesheet" href="/assets/css/noscript.min.css" /></noscript>
 	
+
+
+
+<meta property="og:url" content="https://www.dataparty.xyz/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DataParty - sense, stream, party">
+<meta property="og:description" content="Sense, stream, party">
+<meta property="og:image" content="https://www.dataparty.xyz/images/dataparty-thumb.png">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="www.dataparty.xyz">
+<meta property="twitter:url" content="https://www.dataparty.xyz/">
+<meta name="twitter:title" content="DataParty - sense, stream, party">
+<meta name="twitter:description" content="Sense, stream, party">
+<meta name="twitter:image" content="https://www.dataparty.xyz/images/dataparty-thumb.png">
+
+
+
+<meta name="twitter:site" content="@datapartydao">
 </head>
 
 
-	<body class="is-preload">
 
-		
-		<div id="wrapper" class="divided">
 
-			
-            
-            <section class="banner style2 invert orient-center content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
-                
-                <div class="image">
-                    <img src="images/banner.png" alt="Dataparty confetti" />
-                </div>
-            </section>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@1,900&family=Zen+Tokyo+Zoo&display=swap"
+    rel="stylesheet">
 
-            				
-                <footer class="wrapper style1 align-center">
+
+<body class="is-preload">
+
+    
+    <div id="wrapper" class="divided">
+
+        
+        
+        <div id="starfield"
+            style="position: relative;width:100vw; height:95vh;padding:0%; margin:0%; border: 0%;color:black;">
+
+            <canvas id="canvas2d"></canvas>
+
+            <svg style="position: absolute; 
+                left: 0vw;
+                right: 0vw;
+                top: 0vh;
+                height: 95vh;
+                width: 100vw;
+                z-index: 2;" version="1.1" xmlns="http://www.w3.org/2000/svg" ➥
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+
+                <style type="text/css">
+                    body {
+                        background-color: rgb(9, 0, 10);
+                    }
+
+                    .text-line {
+                        stroke: rgb(255, 252, 210);
+                        stroke-opacity: 0;
+                        stroke-width: 3;
+                        stroke-dasharray: 50;
+                        stroke-dashoffset: 50;
+                        animation: dash 5s ease-in-out forwards, filling 7s ease-in forwards;
+
+                        fill-opacity: 0;
+                        font-size: 10vw;
+                        font-family: 'Roboto';
+                        font-weight: normal;
+                        font-style: italic
+                    }
+
+                    @media only screen and (max-width: 500px) {
+                        .text-line {
+                            stroke-width: 1;
+                            font-size: 15vw;
+                        }
+                    }
+
+                    @keyframes dash {
+                        to {
+                            stroke-dasharray: 700;
+                            stroke-dashoffset: 0;
+                            stroke: rgb(255, 255, 255);
+                            stroke-width: 1;
+                            stroke-opacity: 1.0;
+                        }
+                    }
+
+                    @keyframes filling {
+                        from {
+                            fill-opacity: 0;
+                        }
+
+                        to {
+                            fill-opacity: 0.75;
+                        }
+                    }
+                </style>
+
+                <defs>
+                    <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="4" height="4">
+                        <path d="M-1,1 l2,-2
+                             M0,4 l4,-4
+                             M3,5 l2,-2" style="stroke:rgb(235, 232, 234); stroke-width:1.5" />
+                    </pattern>
+
+                    
+
+
+
+                </defs>
+
+                <text class="text-line" fill="url(#diagonalHatch)" x="50%" y="50%" dominant-baseline="middle"
+                    text-anchor="middle">DATAPARTY</text>
+            </svg>
+
+        </div>
+
+        
+        
+        
+
+        
+        
+<section class="spotlight_video style1 invert orient-left content-align-left image-position-center  onscroll-image-fade-in" id="partyon">
+  <div class="content">
+      <h2>partyon.xyz</h2>
+      <p>Federated social media
+<br/>
+<br/>
+Keywords: Social Media | ActivityPub | Mastodon 
+</p>
+      <ul class="actions stacked">
+          <li><a href="https://partyon.xyz/about" class="button">Party On</a></li>
+      </ul>
+  </div>
+  <div class="image">
+      <video class="image" autoplay loop muted inline>
+        <source src="images/partyon-noise.mp4" type="video/mp4" />
+      </video>
+
+  </div>
+</section>
+        
+<section class="spotlight_video style5 invert orient-right content-align-left image-position-center onscroll-image-fade-in" id="rfparty">
+  <div class="content">
+      <h2>rfparty.xyz</h2>
+      <p><a href="https://play.google.com/store/apps/details?id=xyz.dataparty.rfparty">
+  <img height="32px" src="images/google-play-badge.png">
+</a>
+<br/>
+rfparty is a tool for wireless situational awareness and debugging. its like a tricorder, for your wireless world.
+<br/>
+<br/>
+Keywords: Wireless | IoT | Security
+<br/>
+</p>
+      <ul class="actions stacked">
+          <li><a href="https://rfparty.xyz" class="button">Explore</a></li>
+      </ul>
+  </div>
+  <div class="image">
+      <video class="image" autoplay loop muted inline>
+        <source src="images/rfparty-low-22.mp4" type="video/mp4" />
+      </video>
+
+  </div>
+</section>
+        
+<section class="spotlight_video style1 invert orient-left content-align-left image-position-center onscroll-image-fade-in" id="ninjasintokyo">
+  <div class="content">
+      <h2>ninjas in tokyo</h2>
+      <p>explore tokyo, from a ninja street view
+<br/>
+<br/>
+Keywords: Games | Metaverse | Arcade 
+</p>
+      <ul class="actions stacked">
+          <li><a href="#ninjasintokyo" class="button">Coming Soon</a></li>
+      </ul>
+  </div>
+  <div class="image">
+      <video class="image" autoplay loop muted inline>
+        <source src="images/nit-med-720p.mp4" type="video/mp4" />
+      </video>
+
+  </div>
+</section>
+        
+<section class="spotlight_video style5 invert orient-right content-align-left image-position-center onscroll-image-fade-in" id="teleop">
+  <div class="content">
+      <h2>teleop.xyz</h2>
+      <p>Manage one or many ROS devices remotely. Rapidly troubleshoot issues and immediately share solutions.
+<br/>
+<br/>
+Keywords: ROS | Robotics | IoT 
+</p>
+      <ul class="actions stacked">
+          <li><a href="https://teleop.xyz" class="button">Learn More</a></li>
+      </ul>
+  </div>
+  <div class="image">
+      <video class="image" autoplay loop muted inline>
+        <source src="images/short-video-ros3d-720p-low.mp4" type="video/mp4" />
+      </video>
+
+  </div>
+</section>
+
+
+        <section class="banner style1 invert">
+            <div class="content">
+                <h1>Mailing List</h1>
+
+                <p>For updates in your inbox</p>
+                <center>
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://xyz.us21.list-manage.com/subscribe/post?u=7cfbc2e5276396fb5f543a2ed&amp;id=5ea825f5ee&amp;f_id=007bc2e1f0"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_self">
+                            <div id="mc_embed_signup_scroll">
+                                <div class="indicates-required" style="font-size: 10px;"><span class="asterisk">*</span>
+                                    indicates required</div>
+                                <div class="mc-field-group">
+                                    <label style="font-size: 20px;" for="mce-EMAIL">Email Address <span
+                                            class="asterisk">*</span>
+                                    </label>
+                                    <input style="max-width: 40vw;" type="email" value="" name="EMAIL"
+                                        class="required email" id="mce-EMAIL" required>
+                                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                                </div>
+                                <div id="mce-responses" class="clear foot">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                                
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                        name="b_7cfbc2e5276396fb5f543a2ed_5ea825f5ee" tabindex="-1" value=""></div>
+                                <div class="optionalParent">
+                                    <br>
+                                    <div class="clear foot">
+                                        <input type="submit" value="Subscribe" name="subscribe"
+                                            id="mc-embedded-subscribe" class="button">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </center>
+            </div>
+        </section>
+
+        <section class="banner style1 invert">
+            <div class="content">
+                <h1>Blog</h1>
+                <p>For the latest news, <a href="https://blog.dataparty.xyz">read our blog.</a></p>
+            </div>
+        </section>
+
+        				
+                <footer class="wrapper style1 invert align-center">
                     <div class="inner">
                         <ul class="icons">
+                            <li>
                             <li><a target="_blank" href="https://github.com/datapartyjs/" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
-                            <li><a target="_blank" href="https://twitter.com/datapartyjs" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a rel="me" target="_blank" href="https://partyon.xyz/@dataparty" class="icon brands style2 fa-mastodon"><span class="label">Mastodon</span></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/datapartydao" class="icon brands style2 fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/datapartydao" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UCi7MdWSJ6laGn0p11IuOuTA" class="icon brands style2 fa-youtube"><span class="label">YouTube</span></a></li>
                             <li>
                         </ul>
-                        <p>Dataparty LLC &copy; 2020</p>
+                        <p>Dataparty &copy; 2022 <br> <small style="font-size: 14x;"><em>"sharing the memes of production"</em></small>
+                        </p>
                     </div>
                 </footer>
 
-		
-		</div>
-		
-		
-		
+        
+    </div>
+
+    
+    
 
 
 
@@ -76,5 +328,229 @@
 <script src='/assets/js/bundle.min.js'></script>
 
 
-	</body>
+    <script>
+        
+
+        var Star = function (x, y, maxSpeed) {
+            this.x = x;
+            this.y = y;
+            this.slope = y / x; 
+            this.opacity = 0;
+            this.speed = Math.max(Math.random() * maxSpeed, 1);
+        };
+
+        
+
+        Star.prototype.distanceTo = function (originX, originY) {
+            return Math.sqrt(Math.pow(originX - this.x, 2) + Math.pow(originY - this.y, 2));
+        };
+
+        
+
+        Star.prototype.resetPosition = function (x, y, maxSpeed) {
+            Star.apply(this, arguments);
+            return this;
+        };
+
+        
+
+        var BigBang = {
+            
+
+            getRandomStar: function (minX, minY, maxX, maxY, maxSpeed) {
+                var coords = BigBang.getRandomPosition(minX, minY, maxX, maxY);
+                return new Star(coords.x, coords.y, maxSpeed);
+            },
+
+            
+
+            getRandomPosition: function (minX, minY, maxX, maxY) {
+                return {
+                    x: Math.floor((Math.random() * maxX) + minX),
+                    y: Math.floor((Math.random() * maxY) + minY)
+                };
+            }
+        };
+
+        
+
+        var StarField = function (containerId) {
+            this.container = document.getElementById(containerId);
+            this.canvasElem = this.container.getElementsByTagName('canvas')[0];
+            this.canvas = this.canvasElem.getContext('2d');
+
+            this.width = this.container.offsetWidth;
+            this.height = this.container.offsetHeight;
+
+            this.starField = [];
+
+            this.r = 255
+            this.g = 255
+            this.b = 255
+        };
+
+        
+
+        StarField.prototype._updateStarField = function () {
+            var i,
+                star,
+                randomLoc,
+                increment;
+
+            for (i = 0; i < this.numStars; i++) {
+                star = this.starField[i];
+
+                increment = Math.min(star.speed, Math.abs(star.speed / star.slope));
+                star.x += (star.x > 0) ? increment : -increment;
+                star.y = star.slope * star.x;
+
+                star.opacity += star.speed / 100;
+
+                
+                if ((Math.abs(star.x) > this.width / 2) ||
+                    (Math.abs(star.y) > this.height / 2)) {
+                    
+                    
+                    
+                    
+                    randomLoc = BigBang.getRandomPosition(
+                        -this.width / 10, -this.height / 10,
+                        this.width / 5, this.height / 5
+                    );
+                    star.resetPosition(randomLoc.x, randomLoc.y, this.maxStarSpeed);
+                }
+            }
+        };
+
+        
+
+        StarField.prototype._renderStarField = function () {
+            var i,
+                star;
+            
+            this.canvas.fillStyle = "rgba(0, 0, 0, .15)";
+            this.canvas.fillRect(0, 0, this.width, this.height);
+
+            
+
+
+            this.r = (Math.random() * 255 * 0.8) + (this.r * 0.2)
+            this.g = (Math.random() * 255 * 0.8) + (this.g * 0.2)
+            this.b = (Math.random() * 255 * 0.8) + (this.b * 0.2)
+
+
+            
+            for (i = 0; i < this.numStars; i++) {
+                star = this.starField[i];
+                this.canvas.fillStyle = "rgba(" + this.r + "," + this.g + " , " + this.b + ", " + star.opacity + ")";
+                this.canvas.fillRect(
+                    star.x + this.width / 2,
+                    star.y + this.height / 2,
+                    2, 2);
+            }
+        };
+
+        
+
+        StarField.prototype._renderFrame = function (elapsedTime) {
+            var timeSinceLastFrame = elapsedTime - (this.prevFrameTime || 0);
+
+            window.requestAnimationFrame(this._renderFrame.bind(this));
+
+            
+            
+            if (timeSinceLastFrame >= 30 || !this.prevFrameTime) {
+                this.prevFrameTime = elapsedTime;
+                this._updateStarField();
+                this._renderStarField();
+            }
+        };
+
+        
+
+        StarField.prototype._adjustCanvasSize = function (width, height) {
+            
+            this.width = this.canvasElem.width = width || this.container.offsetWidth;
+            this.height = this.canvasElem.height = height || this.container.offsetHeight;
+        };
+
+        
+
+        StarField.prototype._watchCanvasSize = function (elapsedTime) {
+            var timeSinceLastCheck = elapsedTime - (this.prevCheckTime || 0),
+                width,
+                height;
+
+            window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+
+            
+            
+            if (timeSinceLastCheck >= 333 || !this.prevCheckTime) {
+                this.prevCheckTime = elapsedTime;
+                width = this.container.offsetWidth;
+                height = this.container.offsetHeight;
+                if (this.oldWidth !== width || this.oldHeight !== height) {
+                    this.oldWidth = width;
+                    this.oldHeight = height;
+                    this._adjustCanvasSize(width, height);
+                }
+            }
+        };
+
+        
+
+        StarField.prototype._initScene = function (numStars) {
+            var i;
+            for (i = 0; i < this.numStars; i++) {
+                this.starField.push(
+                    BigBang.getRandomStar(-this.width / 2, -this.height / 2, this.width, this.height, this.maxStarSpeed)
+                );
+            }
+
+            
+            window.requestAnimationFrame(this._renderFrame.bind(this));
+            window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+        };
+
+        
+
+        StarField.prototype.render = function (numStars, maxStarSpeed) {
+            this.numStars = numStars || 100;
+            this.maxStarSpeed = maxStarSpeed || 3;
+
+            this._initScene(this.numStars);
+        };
+
+        
+
+        (function () {
+            var lastTime = 0;
+            var vendors = ['ms', 'moz', 'webkit', 'o'];
+            for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+                window.cancelAnimationFrame =
+                    window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+            }
+
+            if (!window.requestAnimationFrame)
+                window.requestAnimationFrame = function (callback, element) {
+                    var currTime = new Date().getTime();
+                    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                    var id = window.setTimeout(function () { callback(currTime + timeToCall); },
+                        timeToCall);
+                    lastTime = currTime + timeToCall;
+                    return id;
+                };
+
+            if (!window.cancelAnimationFrame)
+                window.cancelAnimationFrame = function (id) {
+                    clearTimeout(id);
+                };
+        }());
+
+        
+        var starField = new StarField('starfield').render(64, 6);
+    </script>
+</body>
+
 </html>

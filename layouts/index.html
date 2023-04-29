@@ -6,18 +6,112 @@
 	This Hugo theme is licensed under the Creative Commons Attribution 3.0 License.
 -->
 <html>
-	
-	{{ partial "template/head" . }}
 
-	<body class="is-preload">
+{{ partial "template/head" . }}
 
-		<!-- Wrapper -->
-		<div id="wrapper" class="divided">
 
-			<!-- Main -->
-            <!-- Banner -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@1,900&family=Zen+Tokyo+Zoo&display=swap"
+    rel="stylesheet">
+
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+
+        <!-- Main -->
+        <!-- Banner -->
+        <div id="starfield"
+            style="position: relative;width:100vw; height:95vh;padding:0%; margin:0%; border: 0%;color:black;">
+
+            <canvas id="canvas2d"></canvas>
+
+            <svg style="position: absolute; 
+                left: 0vw;
+                right: 0vw;
+                top: 0vh;
+                height: 95vh;
+                width: 100vw;
+                z-index: 2;" version="1.1" xmlns="http://www.w3.org/2000/svg" ➥
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+
+                <style type="text/css">
+                    body {
+                        background-color: rgb(9, 0, 10);
+                    }
+
+                    .text-line {
+                        stroke: rgb(255, 252, 210);
+                        stroke-opacity: 0;
+                        stroke-width: 3;
+                        stroke-dasharray: 50;
+                        stroke-dashoffset: 50;
+                        animation: dash 5s ease-in-out forwards, filling 7s ease-in forwards;
+
+                        fill-opacity: 0;
+                        font-size: 10vw;
+                        font-family: 'Roboto';
+                        font-weight: normal;
+                        font-style: italic
+                    }
+
+                    @media only screen and (max-width: 500px) {
+                        .text-line {
+                            stroke-width: 1;
+                            font-size: 15vw;
+                        }
+                    }
+
+                    @keyframes dash {
+                        to {
+                            stroke-dasharray: 700;
+                            stroke-dashoffset: 0;
+                            stroke: rgb(255, 255, 255);
+                            stroke-width: 1;
+                            stroke-opacity: 1.0;
+                        }
+                    }
+
+                    @keyframes filling {
+                        from {
+                            fill-opacity: 0;
+                        }
+
+                        to {
+                            fill-opacity: 0.75;
+                        }
+                    }
+                </style>
+
+                <defs>
+                    <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="4" height="4">
+                        <path d="M-1,1 l2,-2
+                             M0,4 l4,-4
+                             M3,5 l2,-2" style="stroke:rgb(235, 232, 234); stroke-width:1.5" />
+                    </pattern>
+
+                    <!-- <pattern id="img-pattern" patternContentUnits="objectBoundingBox"  width="1.3" height="1.3" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                        <image xlink:href="./images/Crab_Nebula-1024.jpg" height="1" width="1"  preserveAspectRatio="xMidYMid slice" />
+                      </pattern> -->
+
+
+
+                </defs>
+
+                <text class="text-line" fill="url(#diagonalHatch)" x="50%" y="50%" dominant-baseline="middle"
+                    text-anchor="middle">DATAPARTY</text>
+            </svg>
+
+        </div>
+
+        <!--
             <section class="banner style2 invert orient-center content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
-                <!--<div class="content">
                     {{ with .Site.Title }}<h1>{{.}}</h1>{{end}}
                     {{ with .Site.Params.subtitle }}{{end}}
                 
@@ -26,18 +120,357 @@
                         <li><a href="#first" class="button large wide smooth-scroll-middle">Get Started</a></li>
                     </ul>
                 </div>-->
-                <div class="image">
+        <!--<div class="image">
                     {{ with .Site.Params.logo }}<img src="{{.}}" alt="Dataparty confetti" />{{end}}
-                </div>
-            </section>
+                </div>-->
+        <!--</section>-->
 
-            {{ partial "template/footer" . }}
+        <!--{{ partial "spotlight-video" .Site.Data.spotlight1 }}-->
+        {{ partial "spotlight-video" .Site.Data.partyon }}
+        {{ partial "spotlight-video" .Site.Data.rfparty }}
+        {{ partial "spotlight-video" .Site.Data.ninjasintokyo }}
+        {{ partial "spotlight-video" .Site.Data.teleop }}
 
-		<!-- Wrapper -->
-		</div>
-		
-		{{ template "_internal/google_analytics.html" . }}
-		{{ partial "template/scripts" . }}
 
-	</body>
+        <section class="banner style1 invert">
+            <div class="content">
+                <h1>Mailing List</h1>
+
+                <p>For updates in your inbox</p>
+                <center>
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://xyz.us21.list-manage.com/subscribe/post?u=7cfbc2e5276396fb5f543a2ed&amp;id=5ea825f5ee&amp;f_id=007bc2e1f0"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_self">
+                            <div id="mc_embed_signup_scroll">
+                                <div class="indicates-required" style="font-size: 10px;"><span class="asterisk">*</span>
+                                    indicates required</div>
+                                <div class="mc-field-group">
+                                    <label style="font-size: 20px;" for="mce-EMAIL">Email Address <span
+                                            class="asterisk">*</span>
+                                    </label>
+                                    <input style="max-width: 40vw;" type="email" value="" name="EMAIL"
+                                        class="required email" id="mce-EMAIL" required>
+                                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                                </div>
+                                <div id="mce-responses" class="clear foot">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                        name="b_7cfbc2e5276396fb5f543a2ed_5ea825f5ee" tabindex="-1" value=""></div>
+                                <div class="optionalParent">
+                                    <br>
+                                    <div class="clear foot">
+                                        <input type="submit" value="Subscribe" name="subscribe"
+                                            id="mc-embedded-subscribe" class="button">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </center>
+            </div>
+        </section>
+
+        <section class="banner style1 invert">
+            <div class="content">
+                <h1>Blog</h1>
+                <p>For the latest news, <a href="https://blog.dataparty.xyz">read our blog.</a></p>
+            </div>
+        </section>
+
+        {{ partial "template/footer" . }}
+
+        <!-- Wrapper -->
+    </div>
+
+    {{ template "_internal/google_analytics.html" . }}
+    {{ partial "template/scripts" . }}
+
+    <script>
+        /**
+ * The stars in our starfield!
+ * Stars coordinate system is relative to the CENTER of the canvas
+ * @param  {number} x 
+ * @param  {number} y
+ */
+        var Star = function (x, y, maxSpeed) {
+            this.x = x;
+            this.y = y;
+            this.slope = y / x; // This only works because our origin is always (0,0)
+            this.opacity = 0;
+            this.speed = Math.max(Math.random() * maxSpeed, 1);
+        };
+
+        /**
+         * Compute the distance of this star relative to any other point in space.
+         * 
+         * @param  {int} originX
+         * @param  {int} originY
+         * 
+         * @return {float} The distance of this star to the given origin
+         */
+        Star.prototype.distanceTo = function (originX, originY) {
+            return Math.sqrt(Math.pow(originX - this.x, 2) + Math.pow(originY - this.y, 2));
+        };
+
+        /**
+         * Reinitializes this star's attributes, without re-creating it 
+         * 
+         * @param  {number} x 
+         * @param  {number} y
+         * 
+         * @return {Star} this star
+         */
+        Star.prototype.resetPosition = function (x, y, maxSpeed) {
+            Star.apply(this, arguments);
+            return this;
+        };
+
+        /**
+         * The BigBang factory creates stars (Should be called StarFactory, but that is
+         * a WAY LESS COOL NAME! 
+         * @type {Object}
+         */
+        var BigBang = {
+            /**
+             * Returns a random star within a region of the space.
+             * 
+             * @param  {number} minX minimum X coordinate of the region
+             * @param  {number} minY minimum Y coordinate of the region
+             * @param  {number} maxX maximum X coordinate of the region
+             * @param  {number} maxY maximum Y coordinate of the region
+             * 
+             * @return {Star} The random star
+             */
+            getRandomStar: function (minX, minY, maxX, maxY, maxSpeed) {
+                var coords = BigBang.getRandomPosition(minX, minY, maxX, maxY);
+                return new Star(coords.x, coords.y, maxSpeed);
+            },
+
+            /**
+             * Gets a random (x,y) position within a bounding box
+             * 
+             * 
+             * @param  {number} minX minimum X coordinate of the region
+             * @param  {number} minY minimum Y coordinate of the region
+             * @param  {number} maxX maximum X coordinate of the region
+             * @param  {number} maxY maximum Y coordinate of the region
+             * 
+             * @return {Object} An object with random {x, y} positions
+             */
+            getRandomPosition: function (minX, minY, maxX, maxY) {
+                return {
+                    x: Math.floor((Math.random() * maxX) + minX),
+                    y: Math.floor((Math.random() * maxY) + minY)
+                };
+            }
+        };
+
+        /**
+         * Constructor function of our starfield. This just prepares the DOM nodes where
+         * the scene will be rendered.
+         * 
+         * @param {string} canvasId The DOM Id of the <div> containing a <canvas> tag
+         */
+        var StarField = function (containerId) {
+            this.container = document.getElementById(containerId);
+            this.canvasElem = this.container.getElementsByTagName('canvas')[0];
+            this.canvas = this.canvasElem.getContext('2d');
+
+            this.width = this.container.offsetWidth;
+            this.height = this.container.offsetHeight;
+
+            this.starField = [];
+
+            this.r = 255
+            this.g = 255
+            this.b = 255
+        };
+
+        /**
+         * Updates the properties for every star for the next frame to be rendered
+         */
+        StarField.prototype._updateStarField = function () {
+            var i,
+                star,
+                randomLoc,
+                increment;
+
+            for (i = 0; i < this.numStars; i++) {
+                star = this.starField[i];
+
+                increment = Math.min(star.speed, Math.abs(star.speed / star.slope));
+                star.x += (star.x > 0) ? increment : -increment;
+                star.y = star.slope * star.x;
+
+                star.opacity += star.speed / 100;
+
+                // Recycle star obj if it goes out of the frame
+                if ((Math.abs(star.x) > this.width / 2) ||
+                    (Math.abs(star.y) > this.height / 2)) {
+                    //randomLoc = BigBang.getRandomPosition(
+                    //    -this.width / 2, -this.height / 2, 
+                    //       this.width, this.height
+                    //);
+                    randomLoc = BigBang.getRandomPosition(
+                        -this.width / 10, -this.height / 10,
+                        this.width / 5, this.height / 5
+                    );
+                    star.resetPosition(randomLoc.x, randomLoc.y, this.maxStarSpeed);
+                }
+            }
+        };
+
+        /**
+         * Renders the whole starfield (background + stars)
+         * This method could be made more efficient by just blipping each star,
+         * and not redrawing the whole frame
+         */
+        StarField.prototype._renderStarField = function () {
+            var i,
+                star;
+            // Background
+            this.canvas.fillStyle = "rgba(0, 0, 0, .15)";
+            this.canvas.fillRect(0, 0, this.width, this.height);
+
+            /*this.r = 255
+            this.b = 255
+            this.g = 255*/
+
+            this.r = (Math.random() * 255 * 0.8) + (this.r * 0.2)
+            this.g = (Math.random() * 255 * 0.8) + (this.g * 0.2)
+            this.b = (Math.random() * 255 * 0.8) + (this.b * 0.2)
+
+
+            // Stars
+            for (i = 0; i < this.numStars; i++) {
+                star = this.starField[i];
+                this.canvas.fillStyle = "rgba(" + this.r + "," + this.g + " , " + this.b + ", " + star.opacity + ")";
+                this.canvas.fillRect(
+                    star.x + this.width / 2,
+                    star.y + this.height / 2,
+                    2, 2);
+            }
+        };
+
+        /**
+         * Function that handles the animation of each frame. Update the starfield
+         * positions and re-render
+         */
+        StarField.prototype._renderFrame = function (elapsedTime) {
+            var timeSinceLastFrame = elapsedTime - (this.prevFrameTime || 0);
+
+            window.requestAnimationFrame(this._renderFrame.bind(this));
+
+            // Skip frames unless at least 30ms have passed since the last one
+            // (Cap to ~30fps)
+            if (timeSinceLastFrame >= 30 || !this.prevFrameTime) {
+                this.prevFrameTime = elapsedTime;
+                this._updateStarField();
+                this._renderStarField();
+            }
+        };
+
+        /**
+         * Makes sure that the canvas size fits the size of its container
+         */
+        StarField.prototype._adjustCanvasSize = function (width, height) {
+            // Set the canvas size to match the container ID (and cache values)
+            this.width = this.canvasElem.width = width || this.container.offsetWidth;
+            this.height = this.canvasElem.height = height || this.container.offsetHeight;
+        };
+
+        /**
+         * This listener compares the old container size with the new one, and caches
+         * the new values.
+         */
+        StarField.prototype._watchCanvasSize = function (elapsedTime) {
+            var timeSinceLastCheck = elapsedTime - (this.prevCheckTime || 0),
+                width,
+                height;
+
+            window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+
+            // Skip frames unless at least 333ms have passed since the last check
+            // (Cap to ~3fps)
+            if (timeSinceLastCheck >= 333 || !this.prevCheckTime) {
+                this.prevCheckTime = elapsedTime;
+                width = this.container.offsetWidth;
+                height = this.container.offsetHeight;
+                if (this.oldWidth !== width || this.oldHeight !== height) {
+                    this.oldWidth = width;
+                    this.oldHeight = height;
+                    this._adjustCanvasSize(width, height);
+                }
+            }
+        };
+
+        /**
+         * Initializes the scene by resizing the canvas to the appropiate value, and
+         * sets up the main loop.
+         * @param {int} numStars Number of stars in our starfield
+         */
+        StarField.prototype._initScene = function (numStars) {
+            var i;
+            for (i = 0; i < this.numStars; i++) {
+                this.starField.push(
+                    BigBang.getRandomStar(-this.width / 2, -this.height / 2, this.width, this.height, this.maxStarSpeed)
+                );
+            }
+
+            // Intervals not stored because I don't plan to detach them later...
+            window.requestAnimationFrame(this._renderFrame.bind(this));
+            window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+        };
+
+        /**
+         * Kicks off everything!
+         * @param {int} numStars The number of stars to render
+         * @param {int} maxStarSpeed Maximum speed of the stars (pixels / frame)
+         */
+        StarField.prototype.render = function (numStars, maxStarSpeed) {
+            this.numStars = numStars || 100;
+            this.maxStarSpeed = maxStarSpeed || 3;
+
+            this._initScene(this.numStars);
+        };
+
+        /**
+         * requestAnimationFrame shim layer with setTimeout fallback
+         * @see http://paulirish.com/2011/requestanimationframe-for-smart-animating
+         */
+        (function () {
+            var lastTime = 0;
+            var vendors = ['ms', 'moz', 'webkit', 'o'];
+            for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+                window.cancelAnimationFrame =
+                    window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+            }
+
+            if (!window.requestAnimationFrame)
+                window.requestAnimationFrame = function (callback, element) {
+                    var currTime = new Date().getTime();
+                    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                    var id = window.setTimeout(function () { callback(currTime + timeToCall); },
+                        timeToCall);
+                    lastTime = currTime + timeToCall;
+                    return id;
+                };
+
+            if (!window.cancelAnimationFrame)
+                window.cancelAnimationFrame = function (id) {
+                    clearTimeout(id);
+                };
+        }());
+
+        // Kick off!
+        var starField = new StarField('starfield').render(64, 6);
+    </script>
+</body>
+
 </html>

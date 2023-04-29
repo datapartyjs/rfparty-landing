@@ -1,0 +1,13 @@
+####################### Spotlight #########################
+style: "style5 invert orient-right content-align-left image-position-center onscroll-image-fade-in"
+id: "teleop"
+title : "teleop.xyz"
+content: |
+  Manage one or many ROS devices remotely. Rapidly troubleshoot issues and immediately share solutions.
+  <br/>
+  <br/>
+  Keywords: ROS | Robotics | IoT 
+button: 
+  label: "Learn More"
+  link: "https://teleop.xyz"
+video: "images/short-video-ros3d-720p-low.mp4"
