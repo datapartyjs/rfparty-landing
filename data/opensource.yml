@@ -1,0 +1,10 @@
+####################### Spotlight #########################
+style: "style2 orient-left content-align-left image-position-center onscroll-image-fade-in"
+id: "open-source"
+title : "Open Source"
+content: |
+  rfparty is Open Source under the Apache 2.0 license.
+
+button: 
+  label: "Read the code"
+  link: "https://github.com/datapartyjs/rfparty-xyz"

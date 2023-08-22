@@ -1,6 +1,6 @@
-baseURL = "https://dataparty.xyz"
+baseURL = "https://rfparty.xyz"
 languageCode = "en-us"
-title = "DataParty - sense, stream, party"
+title = "rfparty - a new way to see wireless"
 
 
 theme = "hugo-story"
@@ -25,9 +25,9 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
   favicon = true
 
 [Params.social]
-  github = "https://github.com/datapartyjs/"
-  mastodon = "https://partyon.xyz/@dataparty"
+  github = "https://github.com/datapartyjs/rfparty-xyz"
+  mastodon = "https://partyon.xyz/@rfparty"
   #twitter = "https://twitter.com/datapartydao"
-  facebook = "https://www.facebook.com/datapartydao"
+  #facebook = "https://www.facebook.com/datapartydao"
   instagram = "https://www.instagram.com/datapartydao"
   youtube = "https://www.youtube.com/channel/UCi7MdWSJ6laGn0p11IuOuTA"

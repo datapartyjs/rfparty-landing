@@ -1,20 +1,17 @@
 ####################### Spotlight #########################
-style: "style5 invert orient-right content-align-left image-position-center onscroll-image-fade-in"
+style: "fullscreen style5 orient-center content-align-center image-position-center onscroll-image-fade-in"
 id: "rfparty"
-title : "rfparty.xyz"
+title : "rfparty"
 content: |
-  <a href="https://play.google.com/store/apps/details?id=xyz.dataparty.rfparty">
-    <img height="32px" src="images/google-play-badge.png">
-  </a>
-  <br/>
   rfparty is a tool for wireless situational awareness and debugging. its like a tricorder, for your wireless world.
   <br/>
-  <br/>
-  Keywords: Wireless | IoT | Security
-  <br/>
+  <center>
+  <a href="https://play.google.com/store/apps/details?id=xyz.dataparty.rfparty">
+    <img height="48px" src="images/google-play-badge.png">
+  </a>
+  <br>
+  <a href="https://app.rfparty.xyz">open on the web</a>
+  </center>
 
 
-button: 
-  label: "Explore"
-  link: "https://rfparty.xyz"
 video: "images/rfparty-low-22.mp4"
