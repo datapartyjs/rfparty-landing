@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DataParty - sense, stream, party</title>
-    <link>https://dataparty.xyz/</link>
-    <description>Recent content on DataParty - sense, stream, party</description>
+    <title>rfparty - a new way to see wireless</title>
+    <link>https://rfparty.xyz/</link>
+    <description>Recent content on rfparty - a new way to see wireless</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://dataparty.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://rfparty.xyz/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
