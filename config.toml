@@ -20,7 +20,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 ## -----------------------------------------------
 
 [Params]
-  description = "Dataparty"
+  description = "rfparty"
   logo = "images/favicon.ico"
   favicon = true
 
